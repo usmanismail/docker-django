@@ -1,12 +1,12 @@
 docker-django
 =============
 
-## Building ##
+## Building 
     git clone git@github.com:usmanismail/docker-django.git
     cd docker-django
     docker build -t django .
     
-## Creating and Setting up a new project ## 
+## Creating and Setting up a new project 
 
 Note this is only needed if you have not already setup your project through django.
 
