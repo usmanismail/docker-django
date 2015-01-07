@@ -25,7 +25,11 @@ Note this is only needed if you have not already setup your project through djan
     # Actually run django
     docker run --rm -it -v $PWD:/var/site -p 8000:8000 -e SITE_NAME=mysite django
     
-    # Browse to localhost:8000 in a web browser of your choice.
+    # Browse to localhost:8000 in a web browser of your choice. You should see:
+    
+    It worked!
+    Congratulations on your first Django-powered page.
+
     # note: if you are using boot2docker you should lookup your docker interface by using boot2docker ip
     # and browse to the IP specified by this command instead of localhost
     
