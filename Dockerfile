@@ -2,7 +2,7 @@ from centos:7
 
 ADD nginx.repo /etc/yum.repos.d/nginx.repo
 
-RUN yum update
+RUN yum update -y
 RUN yum install -y python python-devel python-setuptools gcc postgresql nginx vim
 RUN easy_install pip
 
