@@ -3,7 +3,7 @@ from centos:7
 ADD nginx.repo /etc/yum.repos.d/nginx.repo
 
 RUN yum update -y
-RUN yum install -y python python-devel python-setuptools gcc postgresql nginx vim
+RUN yum install -y python python-devel python-setuptools gcc python-psycopg2 postgresql nginx vim
 RUN easy_install pip
 
 RUN pip install uwsgi
