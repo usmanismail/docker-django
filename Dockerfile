@@ -8,6 +8,7 @@ RUN easy_install pip
 
 RUN pip install uwsgi
 RUN pip install Django
+RUN pip install mezzanine
 
 # Copy nginx configuration into docker
 ADD site.conf /etc/nginx/conf.d/site.conf
