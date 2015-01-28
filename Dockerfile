@@ -23,6 +23,8 @@ EXPOSE 8000
 # Define /var/site as a volume, django apps must be mounted in here
 VOLUME /var/site
 
+ENV /var/site
+
 WORKDIR /var/site
 
 CMD ["/usr/bin/run-django.sh"]
