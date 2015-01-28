@@ -20,11 +20,7 @@ ADD run-django.sh /usr/bin/run-django.sh
 # Expose post 8000
 EXPOSE 8000
 
-# Define /var/site as a volume, django apps must be mounted in here
-VOLUME /var/site
-
 ENV PYTHONPATH /var/site
-
 WORKDIR /var/site
 
 CMD ["/usr/bin/run-django.sh"]
