@@ -21,8 +21,6 @@ ADD run-django.sh /usr/bin/run-django.sh
 EXPOSE 8000
 
 ENV PYTHONPATH /var/site
-WORKDIR /var/site
-
 CMD ["/usr/bin/run-django.sh"]
 
 
